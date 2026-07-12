@@ -1,0 +1,4 @@
+sku_id,product_name,current_stock,reorder_point,unit_delay_penalty,primary_location
+SKU-9982,Industrial Turbines,150,500,5000,Port of Houston
+SKU-4410,Precision Bearings,2200,1000,800,Port of Long Beach
+SKU-1029,Hydraulic Pumps,80,200,3500,Port of Seattle
