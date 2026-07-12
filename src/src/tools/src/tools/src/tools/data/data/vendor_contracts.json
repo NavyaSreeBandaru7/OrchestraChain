@@ -1,0 +1,18 @@
+{
+  "max_reroute_budget_usd": 15000,
+  "auto_approval_threshold_usd": 10000,
+  "vendors": [
+    {
+      "name": "AirFreight Direct",
+      "mode": "Air",
+      "cost_per_unit_day": 5.00,
+      "max_capacity_units": 2000
+    },
+    {
+      "name": "Rail Logistics Inc",
+      "mode": "Rail",
+      "cost_per_unit_day": 1.50,
+      "max_capacity_units": 5000
+    }
+  ]
+}
