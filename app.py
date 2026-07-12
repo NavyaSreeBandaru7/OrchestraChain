@@ -1,8 +1,10 @@
-import sys
 import os
+import sys
 
-# Ensure root directory is in Python search path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+# Insert the project root directory into sys.path
+root_dir = os.path.dirname(os.path.abspath(__file__))
+if root_dir not in sys.path:
+    sys.path.insert(0, root_dir)
 
 import streamlit as st
 from src.main import app as graph_app
