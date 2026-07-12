@@ -1,5 +1,4 @@
 # OrchestraChain
-
 > **Autonomous Multi-Agent System for Supply Chain Disruption Mitigation**
 
 ChainGuard-AI is a stateful, agentic architecture built on **LangGraph**. When global logistics disruptions occur, ChainGuard-AI decomposes tasks, calculates financial SLA impact, searches carrier capacities, and enforces contractual audit guardrails before approving reroute plans.
