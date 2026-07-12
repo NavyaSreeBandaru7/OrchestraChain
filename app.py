@@ -3,7 +3,6 @@ import os
 
 # Force Python to treat the root repository directory as a package search path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
 import streamlit as st
 from src.main import app as graph_app
 
