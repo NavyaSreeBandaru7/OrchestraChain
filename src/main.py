@@ -1,9 +1,7 @@
 from langgraph.graph import StateGraph, END
-
-# Direct imports within the src/ directory context
 from state import AgentState
-from tools.inventory_tools import get_inventory_impact
-from tools.routing_tools import calculate_reroute_options
+from inventory_tools import get_inventory_impact
+from routing_tools import calculate_reroute_options
 
 def assess_risk_node(state: AgentState):
     sku_id = "SKU-9982"
