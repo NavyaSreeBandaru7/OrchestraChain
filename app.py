@@ -1,12 +1,21 @@
-import sys
 import os
+import sys
 
-# Set working root path explicitly
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+# 1. Get absolute path of current folder (/mount/src/orchestrachain)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# 2. Force append both root and src directory to Python's path list
+if current_dir not in sys.path:
+    sys.path.insert(0, current_dir)
+
+src_dir = os.path.join(current_dir, "src")
+if src_dir not in sys.path:
+    sys.path.insert(0, src_dir)
 
 import streamlit as st
-# Now import from the package
-from src.main import app as graph_app
+
+# 3. Import directly from main (since src/ is now in sys.path)
+from main import app as graph_app
 
 st.set_page_config(page_title="ChainGuard-AI", page_icon="🚢", layout="wide")
 
