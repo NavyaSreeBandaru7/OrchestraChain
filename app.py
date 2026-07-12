@@ -1,12 +1,11 @@
-import os
 import sys
+import os
 
-# Insert the project root directory into sys.path
-root_dir = os.path.dirname(os.path.abspath(__file__))
-if root_dir not in sys.path:
-    sys.path.insert(0, root_dir)
+# Set working root path explicitly
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import streamlit as st
+# Now import from the package
 from src.main import app as graph_app
 
 st.set_page_config(page_title="ChainGuard-AI", page_icon="🚢", layout="wide")
